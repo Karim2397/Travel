@@ -1,0 +1,121 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+.container > *{
+    max-width: 12rem;
+    max-width: 25rem;
+    float: center;
+}
+img{
+    border-radius: 2rem;
+    flex: 1 0;
+    object-fit: cover;
+    height: 20rem;
+    margin: 1rem;
+}
+.details{
+    width: 60%;
+    display: flex;
+    flex-direction:column ;
+    flex: 1 0;
+    border-radius: 3rem;
+    padding: 2rem;
+    color: black;
+    margin-left: 11rem;
+    background-color: lightblue;
+
+}
+.details .header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.container .name{
+    font-size: 5rem;
+    font-weight: bold;
+}
+.details .favorite{
+    color:lightskyblue;
+    font-size: 2.5rem;
+    
+}
+.details .favorite.not{
+    color: rgb(79, 134, 244);
+}
+.details .origin{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+.details .origin >span{
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin: .5rem .5rem .5rem 0rem;
+    border-radius: 2rem;
+    background-color: grey;
+    color: black;
+}
+
+.details .price{
+    margin: 1rem;
+    font-size: 1rem;
+    margin: 1rem 1rem 1rem 0;
+}
+.details .price::before{
+    content: "price";
+    color: black;
+}
+.details .button{
+    color: lightskyblue;
+    background-color:lightblue;
+    border: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 10rem ;
+    outline: none;
+}
+.details button:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    
+    }
+    
+    .rating > input{
+     display:none;
+    }
+    
+    .rating > label {
+    position: relative;
+    width: 1.1em;
+    font-size: 4rem;
+    color: #FFD700;
+    cursor: pointer;
+    }
+    
+    .rating > label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+    }
+    
+    .rating > label:hover:before,
+    .rating > label:hover ~ label:before {
+    opacity: 1 !important;
+    }
+    
+    .rating > input:checked ~ label:before{
+    opacity:1;
+    }
+    
+    .rating:hover > input:checked ~ label:before{ 
+    opacity: 0.4;
+     }

@@ -1,0 +1,36 @@
+
+<marquee width="100%" direction="left" height="100px">
+    Pack Your Bag.
+    </marquee>
+
+<ul>
+    
+    <video width="1200px" height="300px" controls>
+        <source src="/assets/images/travel-video.mp4" type="video/mp4">
+    </video>
+
+    <li *ngFor="let travel of travel">
+        <a routerLink="/travel/{{travel.id}}">
+        <img src="{{travel.imageUrl}}" alt="travel images">
+       
+        <div class="content">
+            <div class="name">
+               <h4> {{travel.name}}</h4>
+            </div>
+            <span class="favorite {{travel.favorite?'':'not'}}">💙</span>
+            <div class="city">
+                <span *ngFor="let city of travel.city">
+                   {{city}}
+                </span>
+            </div>
+        
+            <!-- <div class="roomrent">
+                <h5>price:</h5>
+                ₹{{travel.price}}/Day
+            </div> -->
+         
+        </div>
+    </a>
+    </li>
+    
+</ul>

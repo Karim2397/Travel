@@ -1,0 +1,101 @@
+/* .company-info {
+    border-radius: 4px 0 0 4px;
+  }
+
+  .contact {
+    border-radius: 0 4px 4px 0;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .company-info ul,
+  .brand {
+    text-align: center;
+    list-style-type: none;
+  } */
+  .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+  .wrapper {
+    box-shadow: 0 0 20px 0 rgba(57, 82, 163, 0.7);
+  }
+  
+  .wrapper > * {
+    padding: 1em;
+  }
+  form
+{
+    width: 100%;
+}
+
+input[type="text"],  input[type="email"],  textarea
+{
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #959595;
+    width: 50%;
+    padding: 10px;
+    font-size: 12px;
+  
+    margin: 7px 0 25px 0;
+}
+
+label
+{
+    font-size: 14px;
+}
+
+select
+{
+    height: 37px;
+}
+
+input[type="checkbox"]
+{
+    margin: 5px 10px 5px 0px;
+}
+
+.user-pswd input[type="checkbox"]
+{
+    margin: 5px 10px 5px 15px;
+}
+
+input[type="checkbox"] + p, input[type="radio"] + p
+{
+    font-size: 15px;
+    padding: 0 5px;
+    display: inline;
+    color: #959595;
+}
+
+input[type="radio"] + p
+{
+    font-size: 13px;
+    padding: 0 0 0 20px;
+}
+
+input[type="submit"]
+{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover
+{
+    background-color: #D6544E;
+    border: none;
+}
+.row
+{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  margin-left: 50px;
+}

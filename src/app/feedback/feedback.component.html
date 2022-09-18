@@ -1,0 +1,37 @@
+<p>feedback works!</p>
+<div class="wrapper">
+          <div class="row">
+				<form  method="post">
+				 
+				  <div class="col-7 col">
+					<h3 class="topborder">FEEDBACK</h3>
+					<div class="width50 padright">
+					  <label for="name"> name</label>
+					  <br>
+					  <input type="text"    id="name" class="form-control" placeholder="Enter your name" required [formControl]="name"  />
+					</div>
+					<div class="width50 padright">
+					  <label for="email">email</label>
+					  <br>
+					  <input type="text"   id="lastname" class="form-control"   placeholder="Enter your email" required [formControl]="email" />
+					</div>
+					<div class="width50 padright">
+					  <label for="mobile">mobile </label>
+					  <br>
+					  <input type="text" name="mobile" id="mobile" class="form-control"  placeholder=" Enter a mobileno" required [formControl]="mobile" /> 
+					</div> 
+					<div class="width50 padright">    
+					<label for="summary" >summary</label>
+					<br>
+					<textarea name="summary"   id="summary" class="form-control" placeholder="Notes summary, e.g. special notes for our food." [formControl]="summary"></textarea>
+					</div>
+				     </div>
+			         <p>
+			          <button type="button" (click)="saveData()">Save Feedback</button>
+			        </p>   
+				 
+				</form>
+			</div>
+</div>
+
+

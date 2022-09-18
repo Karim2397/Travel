@@ -1,0 +1,31 @@
+<div class="container">
+    <img [src]="travel.imageUrl"[alt]="travel.name">
+</div>
+   <div class="details">
+       <div class="header">
+            <span class="name">
+              <h2>{{travel.name}}</h2>
+            </span>
+            
+           <br>
+            <span class="price">
+              {{travel.price}}
+            </span>
+            <br>
+            <span class="info">
+              {{travel.info}}
+            </span>
+            <button (click)="addToCart()">Add to Cart</button>
+            <br>
+            <div class="rating">
+  
+              <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+              <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+              <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+              <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+             <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+          
+             </div>
+        </div>
+   </div>
+
